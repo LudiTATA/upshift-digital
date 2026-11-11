@@ -33,7 +33,21 @@
 </div><p class="note">Napomena: budžet za plaćene oglase nije uključen u cenu paketa. Snimanje na lokaciji, dodatni kanali, fotografisanje i veći obimi rada ugovaraju se posebno. Izrada prezentacionog sajta počinje od 199 €; tačna cena nakon specifikacije.</p></div></section>
 <section class="section" id="proces"><div class="wrap"><div class="section-head"><div class="eyebrow">Jednostavan proces</div><h2>Od prvog razgovora do objave.</h2><p>Jasan dogovor unapred, bez skrivenih troškova i nerealnih obećanja.</p></div><div class="process"><div class="step"><b>01 / RAZGOVOR</b><h3>Upoznajemo biznis</h3><p>Razumemo uslugu, ciljnu grupu, konkurenciju i šta želite da postignete.</p></div><div class="step"><b>02 / PLAN I IZRADA</b><h3>Pripremamo rešenje</h3><p>Dogovaramo obim, rokove i cenu, zatim pripremamo sadržaj ili sajt.</p></div><div class="step"><b>03 / OBJAVA I UČENJE</b><h3>Pratimo i unapređujemo</h3><p>Objavljujemo, pratimo dogovorene pokazatelje i predlažemo sledeće korake.</p></div></div></div></section>
 <section class="section"><div class="wrap about"><div><div class="eyebrow">O UPSHIFT Digital</div><h2>Partner za sledeći korak tvog biznisa.</h2><p class="muted">UPSHIFT Digital je mala digitalna agencija iz Kragujevca posvećena praktičnim rešenjima za lokalne biznise. Radimo direktno sa klijentima, pažljivo definišemo obim posla i gradimo saradnju na jasnoj komunikaciji.</p></div><div class="about-box"><strong>Ne obećavamo magične rezultate.</strong><p class="muted">Obećavamo posvećen rad, transparentan dogovor i digitalna rešenja koja imaju jasan razlog i cilj.</p><div class="eyebrow">WE MAKE BUSINESSES MOVE FORWARD.</div></div></div></section>
-<section class="wrap" id="kontakt"><div class="contact"><div><div class="eyebrow">Hajde da razgovaramo</div><h2 style="margin:8px 0">Imaš ideju? Napravimo plan.</h2><p>Pošalji upit i opiši čime se bavi tvoj biznis. Javićemo ti se sa predlogom sledećih koraka.</p></div><a class="btn" href="mailto:princeludi4@gmail.com?subject=Upit%20za%20UPSHIFT%20Digital">Pošalji upit ↗</a></div><p class="note">Pre objave zameni princeludi4@gmail.com stvarnom poslovnom adresom i dodaj potvrđene Instagram/telefon podatke.</p></section>
+<section class="wrap" id="kontakt"><div class="contact"><div><div class="eyebrow">Hajde da razgovaramo</div><h2 style="margin:8px 0">Imaš ideju? Napravimo plan.</h2><p>Pošalji upit i opiši čime se bavi tvoj biznis. Javićemo ti se sa predlogom sledećih koraka.</p></div><a class="btn" id="mailBtn" href="#kontakt" target="_blank" rel="noopener">Pošalji upit ↗</a></div><p class="note"></p></section>
 </main>
 <footer class="footer"><div class="wrap"><span>© <span id="year">2026</span> UPSHIFT Digital. Sva prava zadržana.</span><span>Kragujevac, Srbija · Sajt i digitalni marketing</span></div></footer>
+<script>
+(function(){
+  var EMAIL="princeludi4@gmail.com"; // <-- ovde upiši svoj Gmail
+  var SUBJECT="Upit za UPSHIFT Digital";
+  var BODY="Zdravo, zanima me saradnja.\n\nIme i prezime:\nNaziv biznisa:\nŠta mi je potrebno:\n";
+  var btn=document.getElementById("mailBtn");
+  var mobile=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  btn.href = mobile
+    ? "mailto:"+EMAIL+"?subject="+encodeURIComponent(SUBJECT)+"&body="+encodeURIComponent(BODY)
+    : "https://mail.google.com/mail/?view=cm&fs=1&to="+encodeURIComponent(EMAIL)+"&su="+encodeURIComponent(SUBJECT)+"&body="+encodeURIComponent(BODY);
+  if(mobile) btn.removeAttribute("target");
+  var y=document.getElementById("year"); if(y) y.textContent=new Date().getFullYear();
+})();
+</script>
 </body></html>
